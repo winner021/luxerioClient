@@ -1,0 +1,68 @@
+@import"./general";
+
+
+.header{
+background-color: $Neutral200;
+display: flex;
+height: 8rem;
+align-items: center;
+color:$Neutral600;
+position: sticky;
+;
+.header__list{
+
+    flex-basis: 25%;
+    ul{
+        display: flex;
+        list-style: none;
+       
+        li{
+            margin-right: 2.3rem;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+        li{
+            &:first-child{
+                margin-left: 1.8rem;
+            }
+        }
+    }
+}
+
+
+.logo{
+   color: $Neutral800;
+    flex-basis: 50%;
+    text-align: center;
+    font-size: 4.3rem;
+    text-transform:uppercase;
+    letter-spacing:2rem;
+    font-weight: 800;
+}
+.Header_right{
+    flex-basis: 25%;
+    text-align: center;
+    display: flex;
+    .searchicon{
+        font-size: 2rem;
+        color: $Neutral500;
+        
+        padding-right:1rem;
+        background-color: white;
+    }
+    input{
+        border: none;
+        
+    }
+    .carticon{
+        font-size: 2rem;
+        color: $Neutral500;
+         padding-left: 8rem;
+    }
+  
+
+}
+
+
+}

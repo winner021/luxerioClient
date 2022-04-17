@@ -1,0 +1,100 @@
+@import"./general";
+
+$Neutral800:#0C0C0C;
+$Neutral700:#2B2B2B;
+$Neutral600:#747474;
+$Neutral500:#858585;
+$Neutral400:#E3E3E3;
+$Neutral300:#F4F4F4;
+$Neutral200:#FBFBFB;
+.gendercard{
+   background-color:$Neutral800 ;
+   color:$Neutral200 ;
+   text-transform: uppercase;
+   padding-top: 7rem;
+   margin-bottom: 15rem;
+   
+   .about{
+    margin-left: 16rem;
+    margin-bottom: 6rem;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    border-bottom: 2px solid $Neutral200;
+    display: inline-block;
+
+    
+   }
+   .mail__card{
+       background-image:linear-gradient($gradientdark,$gradientlight), url("../../images/mailcard.jpg");
+       background-size: cover;
+       height: 40vh;
+       color:$Neutral800  ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 4rem;
+    
+      a{    
+          
+        color:$Neutral200  ;
+             &:link{
+                 text-decoration: none;
+                 background-color:transparent ;
+                 display: inline-block;
+                 padding: 1.2rem 2.4rem;
+                 font-size: 2rem;
+                 color:$Neutral800  ;
+                 font-weight: 600;
+                 border: 2px solid $Neutral200  ;
+                 transition: all 0.3s;
+                
+             }
+             &:hover{
+                 background-color: $Neutral800 ;
+                 transform: scale(1.2);
+                }
+      }
+           
+       
+   }
+
+
+   .female__card{
+    background-image:linear-gradient($gradientdark,$gradientlight), url("../../images/female.jpg");
+    background-size: cover;
+    height: 40vh;
+    color:$Neutral800  ;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-left: 4rem;
+     margin-bottom: 8rem;
+ 
+   a{    
+       
+     color:$Neutral200  ;
+          &:link{
+              text-decoration: none;
+              background-color:transparent ;
+              display: inline-block;
+              padding: 1.2rem 2.4rem;
+              font-size: 2rem;
+              color:$Neutral800  ;
+              font-weight: 600;
+              border: 2px solid $Neutral200  ;
+              transition: all 0.3s;
+             
+          }
+          &:hover{
+              background-color: $Neutral800 ;
+              transform: scale(1.2);
+             }
+   }
+        
+    
+}
+
+
+
+   
+}

@@ -1,0 +1,65 @@
+@import"./general";
+$Neutral800:#0C0C0C;
+$Neutral700:#2B2B2B;
+$Neutral600:#747474;
+$Neutral500:#858585;
+$Neutral400:#E3E3E3;
+$Neutral300:#F4F4F4;
+$Neutral200:#FBFBFB;
+$gradientdark:rgba(17, 17, 17, 0.715);
+$gradientlight:rgba(133, 133, 133, 0.116);
+.aboutus{
+    position: relative;
+    background-color:$Neutral800 ;
+    .images{
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+      .image{
+          background-image:linear-gradient($gradientdark,$gradientlight), url("../../images/wardrobe.jpg");
+          height: 90vh;
+          background-size: cover;
+          position: relative;
+      }
+      .Txt{
+          color: $Neutral200;
+          text-align: center;
+          margin-top: 15rem;
+          .Txtheading{
+              font-size: 4rem;
+              margin-bottom: 4rem;
+              letter-spacing: 2px;
+          }
+          .txtabout{
+              font-size: 2rem;
+              text-transform: uppercase;
+              line-height: 2;
+              text-align: left;
+              margin-left: 4rem;
+              letter-spacing: 2px;
+          }
+          
+
+
+      }
+     
+        
+    }
+    .about{
+        background-color:$Neutral200 ;
+        height: 20rem;
+        width: 60rem;
+        position: absolute;
+        top:30rem;
+       margin-left: 2rem;
+       p{
+           font-size: 4rem;
+           font-weight: 500;
+           line-height:1.5;
+           text-transform: uppercase;
+           letter-spacing: 4px;
+           margin-top: 4rem;
+       }
+    }
+    
+}
+
