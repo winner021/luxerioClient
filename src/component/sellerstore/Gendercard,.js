@@ -1,7 +1,25 @@
 import React from 'react'
-import"../css/style.css"
 import { Link } from 'react-router-dom'
-const Gendercard=()=> {
+import { useHistory } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { genderFetchAction } from '../../actions'
+
+import"../css/style.css"
+import { genderaction } from '../../actions'
+import { clickaction } from '../../actions'
+
+const Gendercard=(props)=> {
+
+  let history=useHistory()
+
+  const clickhandlerMail=(value)=>{
+   
+    props.clickaction("All Products")
+    props.genderaction(value)
+    history.push('/Productlistingpage')
+    
+  }
+  console.log(props.state)
   return (
       
       <div className="gendercard ">
@@ -13,10 +31,10 @@ const Gendercard=()=> {
         <div className="grid-2-col bottom-marg">
 
         <div className="mail__card">
-            <Link to="#">For Him</Link>
+            <button className='mail__card___btn'onClick={()=>clickhandlerMail("Mens")}  to="#">For Him</button>
         </div>
         <div className="female__card">
-        <Link to="#">For Her</Link>
+        <button className='female__card___btn' onClick={()=>clickhandlerMail("Woman")} to="#">For Her</button>
         </div>
         </div>
         
@@ -25,4 +43,8 @@ const Gendercard=()=> {
   )
 }
 
-export default Gendercard
+const mapStateToProps=(state)=>{
+  return {state:state}
+}
+
+export default connect(mapStateToProps,{genderaction,clickaction,genderFetchAction}) (Gendercard)

@@ -22,12 +22,14 @@ $gradientlight:rgba(133, 133, 133, 0.44);
     .Products_page{
        padding-left: 15rem;
        flex-basis: 80%;
+       margin-left: 25rem;
         .productname{
             font-size: 3rem;
             font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
             margin-bottom: 4rem;
+            margin-top: 10rem;
         }
         .product__container{
             display: flex;
@@ -41,8 +43,8 @@ $gradientlight:rgba(133, 133, 133, 0.44);
                 margin-right: 10rem;
                 .product__image{
                     img{
-                        height: 50rem;
-                        width: 35rem;
+                        height: 33rem;
+                        width: 25rem;
                         
                     }
                 

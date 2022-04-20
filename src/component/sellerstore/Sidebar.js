@@ -1,35 +1,65 @@
 import React from 'react'
 import { useState } from 'react' 
+import"../css/style.css"
+import { clickaction } from '../../actions'
+import { genderaction } from '../../actions'
+import { connect } from 'react-redux'
 
 
-
-const Sidebar =({gettxt})=>{
-    const[value,setvalue]=useState(null);
-    
-    const changehandler=(e)=>{
-         console.log(e.target.value)
+const Sidebar =(props)=>{
+    const[getclick,setclick]=useState(0)
+    const genderHandler=(e)=>{
+        props.genderaction(e.target.value)
+   }
+    const categoryHandler=(e)=>{
+       
+         props.clickaction(e.target.value)
     }
 
+    const clickhandlerOne=(value)=>{
+       setclick(getclick+1)
+           props.onclickOne(getclick)
+              
+     }
+   
+     const clickhandlerTwo=(value)=>{
+        setclick(getclick+1)
+       props.onclickTwo(getclick)
+  }
+    
+
      return(
-      /*  <div className='sidebar'>
-          <form onChange={changehandler}>
+        <div className='sidebar'>
+            <h1>
+                Refine by
+            </h1>
+          <form onChange={categoryHandler} className="category_select">
+              <h2 className='Category__heading'>Product Type</h2>
               <input type="radio"  id="T-Shirts" name="category" value="T-Shirts"/>
-              <label for="T-Shirts">T-Shirts</label><br/>
+              <label htmlFor="T-Shirts">T-Shirts</label><br/>
               <input type="radio" id="Shirts" name="category" value="Shirts"/>
-              <label for="Shirts">Shirts</label><br/>
+              <label htmlFor="Shirts">Shirts</label><br/>
               <input type="radio" id="Huddy" name="category" value="Huddy"/>
-              <label for="Huddy">Huddy</label>
+              <label htmlFor="Huddy">Huddy</label><br/>
               <input type="radio" id="acesssories" name="category" value="acesssories"/>
-              <label for="acesssories">acesssories</label>
+              <label htmlFor="acesssories">acesssories</label><br/>
               <input type="radio" id="footwear" name="category" value="footwear"/>
-              <label for="footwear">footwear</label>
+              <label htmlFor="footwear">footwear</label>
+              <input type="reset" className='reset' onClick={()=>clickhandlerTwo("true")} />
               
           </form>
-        </div>*/
-        <div>
-            Sidebar
+          <form onChange={genderHandler} className="gender_select">
+              <h2 className='gender__heading'> gender</h2>
+              <input type="radio"  id="Mens" name="gender" value="Mens"/>
+              <label htmlFor="Mens">Mens</label><br/>
+              <input type="radio" id="Woman" name="gender" value="Woman"/>
+              <label htmlFor="Woman">Woman</label><br/>
+              <input type="reset" className='reset' onClick={()=>clickhandlerOne("true")} />
+              
+          </form>
         </div>
-    )
+       
+     )
 }
 
-export default Sidebar 
+export default connect(null,{clickaction,genderaction}) (Sidebar) 

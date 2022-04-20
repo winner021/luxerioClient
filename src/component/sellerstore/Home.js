@@ -6,6 +6,7 @@ import Gendercard from './Gendercard,'
 import Category from './Category'
 import Aboutus from './Aboutus'
 const Home=()=>{
+  localStorage.clear()
 return(
     <div>
       <Header/>

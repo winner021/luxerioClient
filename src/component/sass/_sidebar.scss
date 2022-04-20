@@ -1,1 +1,81 @@
-@import "./general"
+@import "./general";
+$Neutral800:#0C0C0C;
+$Neutral700:#2B2B2B;
+$Neutral600:#747474;
+$Neutral500:#858585;
+$Neutral400:#E3E3E3;
+$Neutral300:#F4F4F4;
+$Neutral200:#FBFBFB;
+$gradientdark:rgba(12, 12, 12, 0.589);
+$gradientlight:rgba(133, 133, 133, 0.44);
+
+.sidebar{
+    padding-top: 3rem;
+    position: fixed;
+    background-color:$Neutral800 ;
+    height: 100vh;
+    color: $Neutral200 ;
+    h1{
+        text-transform: uppercase;
+        margin-left:2rem;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+        letter-spacing: 3px;
+    }
+    .category_select{
+        margin-top: 6rem;
+        display: flex;
+        flex-direction: column;
+        margin-left:2rem;
+        font-size: 1.3rem;
+        text-transform:uppercase;
+        color: $Neutral200;
+        .reset{
+            display: inline-block;
+            margin-top: 2rem;
+            background-color: $Neutral800;
+            color: $Neutral200;
+            border: 2px solid $Neutral200;
+            padding: 1rem 2rem;
+            width: 10rem;
+            
+        }
+        .Category__heading{
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            padding-right: 2rem;
+        }
+        
+    }
+    .gender_select{
+        
+        display: flex;
+        flex-direction: column;
+        margin-left:2rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-transform:uppercase;
+        .reset{
+            display: inline-block;
+            margin-top: 2rem;
+            background-color: $Neutral800;
+            color: $Neutral200;
+            border: 2px solid $Neutral200;
+            padding: 1rem 2rem;
+            width: 10rem;
+            
+        }
+        .gender__heading{
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            padding-right: 2rem;
+            margin-top: 4rem;
+        }
+        
+    }
+    
+}

@@ -1,5 +1,5 @@
 const InitialState={
-    datavalue:null
+    datavalue:[]
 }
 
 
