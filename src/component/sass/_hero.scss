@@ -14,8 +14,9 @@ $gradientlight:rgba(133, 133, 133, 0.44);
     background-size: cover;
     height: 84vh;
     color:$Neutral200 ;
+    width: 100vw;
   .herocontent{
-     max-width:60rem;
+     max-width:100rem;
      padding-top: 1%;
      .hero__heading{
          font-size: 15rem;
@@ -115,5 +116,36 @@ $gradientlight:rgba(133, 133, 133, 0.44);
     100%{
         transform: translate(0px);
         opacity: 1;
+    }
+}
+
+@media(max-width:63em){
+    .hero{
+        background-size: cover;
+    }
+}
+@media(max-width:52em){
+    .hero{
+        background-size: cover;
+    }
+}
+@media(max-width:43em){
+    .hero{
+        background-size: cover;
+        align-content: center;
+        background-position: center;
+    }
+}
+
+@media(max-width:37em){
+    .hero{
+        
+        background-position:center;
+        .herocontent{
+            .hero__heading{
+                margin-top: 50%;
+
+            }
+        }
     }
 }

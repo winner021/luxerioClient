@@ -7,6 +7,7 @@ import { genderFetchAction } from '../../actions'
 import"../css/style.css"
 import { genderaction } from '../../actions'
 import { clickaction } from '../../actions'
+import { memo } from 'react'
 
 const Gendercard=(props)=> {
 
@@ -16,8 +17,15 @@ const Gendercard=(props)=> {
    
     props.clickaction("All Products")
     props.genderaction(value)
+    props.genderFetchAction(value)
     history.push('/Productlistingpage')
     
+  }
+  const clickhandlerfemale=(value)=>{
+    props.genderaction(value)
+    props.genderFetchAction(value)
+    props.clickaction("All Products")
+    history.push('/Productlistingpage')
   }
   console.log(props.state)
   return (
@@ -34,7 +42,7 @@ const Gendercard=(props)=> {
             <button className='mail__card___btn'onClick={()=>clickhandlerMail("Mens")}  to="#">For Him</button>
         </div>
         <div className="female__card">
-        <button className='female__card___btn' onClick={()=>clickhandlerMail("Woman")} to="#">For Her</button>
+        <button className='female__card___btn' onClick={()=>clickhandlerfemale("Woman")} to="#">For Her</button>
         </div>
         </div>
         

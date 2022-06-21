@@ -1,0 +1,85 @@
+@import "./general";
+
+.wishlist{
+    padding-top: 8rem;
+    display: flex;
+    color:$Neutral800;
+    margin-bottom: 2rem;
+    
+    .wishlist_product{
+       
+        p{
+            margin-bottom: 6rem;
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-left: 4rem;
+            margin-top: 2rem;
+      }
+        flex-basis: 70%;
+        
+  
+        .product_desc{
+          box-shadow: 0 0 35px $Box_shadow200 ;
+            display: inline-block;
+            background-color: $Neutral300;
+            margin: 0 auto;
+            margin-bottom: 4rem;
+            display: flex;
+            max-width:60rem;
+            
+           .product_image{
+               img{
+                  height: 25rem;
+               }
+               
+           }
+           .product_details{
+               margin-left: 2rem;
+               margin-top: 1rem;
+               .product_Name{
+                   font-size: 4rem;
+                   text-transform: uppercase;
+                   letter-spacing: 4px;
+                   margin-top: 4rem;
+                   margin-bottom: 1rem;
+               }
+               .product_price ,.product_Brand{
+                   font-size: 1.5rem;
+                   text-transform: uppercase;
+                   margin-bottom: 0.7rem;
+               }
+               .Product_btn{
+  
+  
+                  .btn{
+                      display: flex;
+                      .product_delete{
+                          font-size: 2rem;
+                          text-transform: uppercase;
+                          letter-spacing: 2px;
+                        
+                          button{
+                              background-color:transparent ;
+                              border: 2px solid $Neutral800;
+                              color: $Neutral800;
+                              padding: 1rem;
+                              margin-bottom: 2rem;
+                              &:hover{
+                                  background-color:$Neutral800 ;
+                                  color: $Neutral200;
+                              }
+                          }
+                      }
+                  }
+  
+               }
+  
+           }
+            
+        }
+  
+    }
+  
+}
+   

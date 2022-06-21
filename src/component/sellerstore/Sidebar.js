@@ -4,7 +4,7 @@ import"../css/style.css"
 import { clickaction } from '../../actions'
 import { genderaction } from '../../actions'
 import { connect } from 'react-redux'
-
+import { memo } from 'react'
 
 const Sidebar =(props)=>{
     const[getclick,setclick]=useState(0)

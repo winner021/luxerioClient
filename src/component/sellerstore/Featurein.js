@@ -1,5 +1,6 @@
 import React from 'react'
 import "../css/style.css"
+import { memo } from 'react';
 const Featurein=()=>{
     return(
         

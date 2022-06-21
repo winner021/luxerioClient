@@ -48,25 +48,23 @@ $gradientlight:rgba(133, 133, 133, 0.116);
         .about{
             margin-top:50%;
             transform: translate(0,-50%);
-            a{
-                color:$Neutral200 ;
-                border: 2px solid $Neutral200 ;
-                padding: 1.2rem 2.4rem;
-                font-size: 2rem;
-                text-transform: uppercase;
-                display: inline-block;
-                transition: all 0.3s;
-                &:link{
-                    text-decoration: none;
-                    background-color: transparent;
-                   
-                   
-                }
-                &:hover{
-                    background-color: $Neutral800;
-                    transform: scale(1.2);
-                }
-            }
+            
+            .category__card{
+                background-color:transparent;
+                border: 2px solid $Neutral200;
+                padding: 1.2rem 2rem;
+                color: $Neutral200;
+               font-size: 2rem;
+               font-weight: 600;
+               display: inline-block;
+               transition: all 0.3s;
+      
+               &:hover{
+                 background-color: $Neutral800;
+                 transform: scale(1.3);
+                
+                 }
+              }
         }
        
     }
@@ -78,25 +76,22 @@ $gradientlight:rgba(133, 133, 133, 0.116);
         .about{
             margin-top:50%;
             transform: translate(0,-50%);
-            a{
-                color:$Neutral200 ;
-                border: 2px solid $Neutral200 ;
-                padding: 1.2rem 2.4rem;
-                font-size: 2rem;
-                text-transform: uppercase;
-                display: inline-block;
-                transition: all 0.3s;
-                &:link{
-                    text-decoration: none;
-                    background-color: transparent;
-                   
-                   
-                }
-                &:hover{
-                    background-color: $Neutral800;
-                    transform: scale(1.2);
-                }
-            }
+            .category__card{
+                background-color:transparent;
+                border: 2px solid $Neutral200;
+                padding: 1.2rem 2rem;
+                color: $Neutral200;
+               font-size: 2rem;
+               font-weight: 600;
+               display: inline-block;
+               transition: all 0.3s;
+      
+               &:hover{
+                 background-color: $Neutral800;
+                 transform: scale(1.3);
+                
+                 }
+              }
         }
        
     }
@@ -108,25 +103,22 @@ $gradientlight:rgba(133, 133, 133, 0.116);
         .about{
             margin-top:50%;
             transform: translate(0,-50%);
-            a{
-                color:$Neutral200 ;
-                border: 2px solid $Neutral200 ;
-                padding: 1.2rem 2.4rem;
-                font-size: 2rem;
-                text-transform: uppercase;
-                display: inline-block;
-                transition: all 0.3s;
-                &:link{
-                    text-decoration: none;
-                    background-color: transparent;
-                   
-                   
-                }
-                &:hover{
-                    background-color: $Neutral800;
-                    transform: scale(1.2);
-                }
-            }
+            .category__card{
+                background-color:transparent;
+                border: 2px solid $Neutral200;
+                padding: 1.2rem 2rem;
+                color: $Neutral200;
+               font-size: 2rem;
+               font-weight: 600;
+               display: inline-block;
+               transition: all 0.3s;
+      
+               &:hover{
+                 background-color: $Neutral800;
+                 transform: scale(1.3);
+                
+                 }
+              }
         }
        
     }
@@ -138,25 +130,22 @@ $gradientlight:rgba(133, 133, 133, 0.116);
         .about{
             margin-top:50%;
             transform: translate(0,-50%);
-            a{
-                color:$Neutral200 ;
-                border: 2px solid $Neutral200 ;
-                padding: 1.2rem 2.4rem;
-                font-size: 2rem;
-                text-transform: uppercase;
-                display: inline-block;
-                transition: all 0.3s;
-                &:link{
-                    text-decoration: none;
-                    background-color: transparent;
-                   
-                   
-                }
-                &:hover{
-                    background-color: $Neutral800;
-                    transform: scale(1.2);
-                }
-            }
+            .category__card{
+                background-color:transparent;
+                border: 2px solid $Neutral200;
+                padding: 1.2rem 2rem;
+                color: $Neutral200;
+               font-size: 2rem;
+               font-weight: 600;
+               display: inline-block;
+               transition: all 0.3s;
+      
+               &:hover{
+                 background-color: $Neutral800;
+                 transform: scale(1.3);
+                
+                 }
+              }
         }
        
     }
@@ -169,25 +158,22 @@ $gradientlight:rgba(133, 133, 133, 0.116);
         .about{
             margin-top:50%;
             transform: translate(0,-50%);
-            a{
-                color:$Neutral200 ;
-                border: 2px solid $Neutral200 ;
-                padding: 1.2rem 2.4rem;
-                font-size: 2rem;
-                text-transform: uppercase;
-                display: inline-block;
-                transition: all 0.3s;
-                &:link{
-                    text-decoration: none;
-                    background-color: transparent;
-                   
-                   
-                }
-                &:hover{
-                    background-color: $Neutral800;
-                    transform: scale(1.2);
-                }
-            }
+            .category__card{
+                background-color:transparent;
+                border: 2px solid $Neutral200;
+                padding: 1.2rem 2rem;
+                color: $Neutral200;
+               font-size: 2rem;
+               font-weight: 600;
+               display: inline-block;
+               transition: all 0.3s;
+      
+               &:hover{
+                 background-color: $Neutral800;
+                 transform: scale(1.3);
+                
+                 }
+              }
         }
        
     }
@@ -206,5 +192,50 @@ $gradientlight:rgba(133, 133, 133, 0.116);
     100%{
         transform: translate(0px);
         opacity: 1;
+    }
+}
+
+
+@media(max-width:49em){
+    .category{
+        padding: 4rem;
+    }
+}
+@media(max-width:57em){
+    .category{
+        .category__about{
+            margin-left: 11rem;
+            letter-spacing: 1px;
+        }
+    }
+}
+@media(max-width:53em){
+    .category{
+        .category__about{
+            margin-left: 7rem;
+        }
+    }
+}
+
+@media(max-width:48em){
+    .category{
+        .category__about{
+            margin-left: 2rem;
+        }
+    }
+}
+@media(max-width:48em){
+    .category{
+        .product__tshirt,.product__shirt,.product__accessories,.product__shoes,.product__trousers{
+            height: 30vh;
+        }
+    }
+}
+
+@media(max-width:33em){
+    .category{
+        .product__tshirt,.product__shirt,.product__accessories,.product__shoes,.product__trousers{
+            height: 25vh;
+        }
     }
 }

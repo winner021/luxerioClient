@@ -4,6 +4,7 @@ import "../css/style.css"
 import { connect } from 'react-redux'
 import {clickaction} from "../../actions"
 import { useHistory } from 'react-router-dom'
+import { memo } from 'react'
 const Hero=(props)=>{
     let history=useHistory();
 

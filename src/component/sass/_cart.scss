@@ -1,0 +1,209 @@
+@import "./general";
+$Neutral800:#0C0C0C;
+$Neutral700:#2B2B2B;
+$Neutral600:#747474;
+$Neutral500:#858585;
+$Neutral400:#E3E3E3;
+$Neutral300:#F4F4F4;
+$Neutral200:#FBFBFB;
+$Box_shadow200:rgba(116, 116, 116, 0.295);
+.Cart{
+  padding-top: 8rem;
+  display: flex;
+  color:$Neutral800;
+  margin-bottom: 2rem;
+  
+  .cart_product{
+     
+      p{
+          margin-bottom: 6rem;
+          font-size: 4rem;
+          text-transform: uppercase;
+          letter-spacing: 5px;
+          margin-left: 4rem;
+          margin-top: 2rem;
+    }
+      flex-basis: 70%;
+      
+
+      .product_desc{
+        box-shadow: 0 0 35px $Box_shadow200 ;
+          display: inline-block;
+          background-color: $Neutral300;
+          margin: 0 auto;
+          margin-bottom: 4rem;
+          display: flex;
+          max-width:60rem;
+          
+         .product_image{
+             img{
+                height: 25rem;
+             }
+             
+         }
+         .product_details{
+             margin-left: 2rem;
+             margin-top: 1rem;
+             .product_Name{
+                 font-size: 4rem;
+                 text-transform: uppercase;
+                 letter-spacing: 4px;
+                 margin-top: 4rem;
+                 margin-bottom: 1rem;
+             }
+             .product_price ,.product_Brand{
+                 font-size: 1.5rem;
+                 text-transform: uppercase;
+                 margin-bottom: 0.7rem;
+             }
+             .Product_btn{
+
+
+                .btn{
+                    display: flex;
+                    .btn_increase{
+                        margin-right: 2rem;
+                        font-size: 2rem;
+                        text-transform: uppercase;
+                        
+                        button{
+                            background-color:transparent ;
+                            border: 2px solid $Neutral800;
+                            color: $Neutral800;
+                            padding: 1rem;
+
+                            &:hover{
+                                background-color:$Neutral800 ;
+                                color: $Neutral200;
+                            }
+                        }
+
+                    }
+                    .product_decrease{
+                        font-size: 2rem;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        button{
+                            background-color:transparent ;
+                            border: 2px solid $Neutral800;
+                            color: $Neutral800;
+                            padding: 1rem;
+                            &:hover{
+                                background-color:$Neutral800 ;
+                                color: $Neutral200;
+                            }
+                        }
+                    }
+                    .product_delete{
+                        font-size: 2rem;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        margin-left: 2rem;
+                        button{
+                            background-color:transparent ;
+                            border: 2px solid $Neutral800;
+                            color: $Neutral800;
+                            padding: 1rem;
+                            &:hover{
+                                background-color:$Neutral800 ;
+                                color: $Neutral200;
+                            }
+                        }
+                    }
+                }
+             
+                .product_quantity{
+                    text-transform: uppercase;
+                    margin-top: 1rem;
+                    font-weight: 900;
+                  margin-bottom: 2rem;
+                    letter-spacing: 4px;
+                }
+
+             }
+
+         }
+          
+      }
+
+  }
+
+
+  .cart_total{
+     position: fixed;
+     right: 10rem;
+
+      .Cart_total_heading{
+          margin-bottom: 6rem;
+      }
+       
+       margin-right: 4rem;
+       margin-top: 10rem;
+       padding: 1rem;
+       text-align: left;
+       font-size: 5rem;
+       max-width:100rem;
+       
+       .Total_quantity{
+           font-size: 2rem;
+           display: flex;
+           justify-content: space-between;
+           margin-bottom: 2rem;
+
+       }
+       .SubTotal_price{
+        font-size: 2rem;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    
+      }
+      .Total_price{
+        font-size: 2rem;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    
+      }
+    
+       
+  }
+  
+
+}
+
+@media(max-width:36em){
+    .Cart{
+        .cart_product{
+            .product_desc{
+                max-width: 42rem;
+                }
+        }
+        .cart_total{
+          
+            margin-right: -6rem;
+            padding: 0;
+            font-size: 1rem;
+            margin-top: 45rem;
+        }
+    }
+    
+}
+@media(max-width:24em){
+    .Cart{
+        .cart_product{
+            .product_desc{
+                max-width: 42rem;
+                font-size: 1rem;
+                }
+        }
+        .cart_total{
+          
+            margin-right: -6rem;
+            margin-left: 5rem;
+            font-size: 0.5rem;
+            margin-top: 42rem;
+        }
+    }
+    
+}

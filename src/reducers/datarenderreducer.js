@@ -5,7 +5,7 @@ const initialValue={
 export default (state=initialValue,action)=>{
     switch (action.type) {
         case "all_item":
-            return{...state,data:action.payload};
+            return{...state,data:action.payload}
         case "Category_items":
             return{...state,data:action.payload};
         case "Gender_items":
@@ -16,3 +16,5 @@ export default (state=initialValue,action)=>{
            return   state;
     }
 }
+
+

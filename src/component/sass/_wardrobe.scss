@@ -63,3 +63,91 @@ $gradientlight:rgba(133, 133, 133, 0.116);
     
 }
 
+
+
+@media (max-width:85em){
+    .aboutus{
+          
+        .about{
+            background-color:$Neutral200 ;
+            height: 25rem;
+            width: 60rem;
+            position: absolute;
+            top:30rem;
+           margin-left: 2rem;
+           p{
+               font-size: 4rem;
+               font-weight: 500;
+               line-height:1.5;
+               text-transform: uppercase;
+               letter-spacing: 4px;
+               margin-top: 4rem;
+               margin-left: 1rem;
+           }
+        }
+        
+    }
+     
+ 
+ }
+ @media(max-width:50em){
+   .aboutus{
+       padding: 4rem;
+       .images{
+       
+      .image{
+        
+          height: 60vh;
+          margin-top: 20rem;
+         
+    }
+}
+    .about{
+        
+        height: 30rem;
+        width: 40rem;
+        top: 60rem;
+   
+       p{
+           font-size: 4rem;
+           font-weight: 500;
+           line-height:1.5;
+           text-transform: uppercase;
+           letter-spacing: 4px;
+           margin-top: 4rem;
+       }
+    }
+
+
+   }
+ }
+
+ @media(max-width:37em){
+    .aboutus{
+        padding: 4rem;
+     .about{
+         
+         height: 55rem;
+         width: 30rem;
+    
+        
+     }
+ 
+ 
+    }
+  }
+ @media(max-width:25em){
+    .aboutus{
+        padding: 4rem;
+     .about{
+         
+         height: 50rem;
+         width: 25rem;
+    
+        
+     }
+ 
+ 
+    }
+  }
+ 

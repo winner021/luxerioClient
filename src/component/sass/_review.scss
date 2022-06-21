@@ -1,0 +1,309 @@
+@import"./general";
+
+
+$Neutral800:#0C0C0C;
+$Neutral700:#2B2B2B;
+$Neutral600:#747474;
+$Neutral500:#858585;
+$Neutral400:#E3E3E3;
+$Neutral300:#F4F4F4;
+$Neutral200:#FBFBFB;
+$gradientdarks:rgba(12, 12, 12, 0.721);
+$gradientlights:rgba(133, 133, 133, 0.741);
+
+
+.review{
+    height: auto;
+    background-image:linear-gradient($gradientdarks,$gradientlights) ,url("../../images/review.jpg");
+    background-size: cover;
+    padding-bottom: 4rem;
+    h2{
+        color:$Neutral200 ;
+        text-align: center;
+        padding-top: 3rem;
+        font-size: 5rem;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+    }
+
+    .review_data{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .review_card{
+            background-color:rgba(255, 255, 255, 0.673) ;
+            display: inline-block;
+            margin-top: 2rem;
+            max-width: 20rem;
+            height: 20rem;
+            margin-right: 2rem;
+            box-shadow: 0 0 32px rgba(0, 0, 0, 0.571);
+            
+            .review_name{
+                margin-top: 2rem;
+                margin-left: 2rem;
+                font-size: 2rem;
+                text-transform: uppercase;
+                font-weight: 500;
+                letter-spacing: 2px;
+                text-align:left;
+            }
+            .review_about{
+
+                margin-top: 2rem;
+                margin-left: 2rem;
+                font-size: 1rem;
+                text-transform: uppercase;
+                font-weight: 500;
+                letter-spacing: 2px;
+                text-align:left;
+            }
+
+            
+
+        }
+    }
+    .review_form{
+       background-color: #0c0c0c3a;
+       margin-top: 1rem;
+       color:$Neutral200;
+       padding-bottom: 4rem;
+       h2{
+           margin-top: -2rem;
+           font-size: 2rem;
+       }
+       
+        .name{
+            display: inline-block;
+            margin-top: 8rem;
+            margin-left: 50%;
+            transform: translate(-50%);
+            margin-bottom: 4rem;
+            
+            
+        }
+        .review{
+            display: inline-block;
+            padding-top: 2rem;
+            margin-left: 50%;
+            transform: translate(-50%);
+            margin-bottom: 2rem;
+            height: auto;
+            border: 2px solid $Neutral800 ;
+            padding: 4rem;
+        }
+        .submitBtn{
+            button{
+                border: none;
+                font-size: 2rem;
+                background-color:$Neutral200 ;
+                font-weight: 500;
+                padding: 1.2rem 2.4rem;
+                margin-left: 50%;
+                transform: translate(-50%);
+                margin-bottom: 2rem;
+            }
+
+        }
+
+    }
+    
+}
+
+
+@media(max-width:67em){
+    
+
+    .review{
+        .review_data{
+            .review_card{
+                max-width: 25rem;
+                height: 25rem;
+            }
+        }
+    }
+}
+
+@media(max-width:46em){
+
+    .review{
+        height:auto;
+        .review_container{
+                display:block;
+            .review_data{
+               
+            
+                .review_card{
+                
+                  
+                  
+                    max-width: 40rem;
+                    height: 30rem;
+                 
+                    
+                   
+                   
+        
+                    
+        
+                }
+            }
+
+        }
+
+    
+        
+       
+        
+    }
+    .review_form{
+        background-color: red;
+       
+    }
+    
+
+}
+@media(max-width:41.375em){
+    
+.review{
+    height: auto;
+    background-image:linear-gradient($gradientdarks,$gradientlights) ,url("../../images/review.jpg");
+    background-size: cover;
+    padding-bottom: 4rem;
+    h2{
+        color:$Neutral200 ;
+        text-align: center;
+        padding-top: 3rem;
+        font-size: 5rem;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+    }
+
+    .review_data{
+        display:block;
+        justify-content: center;
+        flex-wrap: wrap;
+        .review_card{
+            background-color:rgba(255, 255, 255, 0.673) ;
+           display: block;
+            margin-top: 2rem;
+            max-width: auto;
+            overflow: hidden;
+            height: auto;
+            margin-right: 2rem;
+            box-shadow: 0 0 32px rgba(0, 0, 0, 0.571);
+            
+            .review_name{
+                margin-top: 2rem;
+                margin-left: 2rem;
+                font-size: 1rem;
+                text-transform: uppercase;
+                font-weight: 500;
+                letter-spacing: 2px;
+                text-align:left;
+            }
+            .review_about{
+
+                margin-top: 2rem;
+                margin-left: 2rem;
+                font-size: 0.5rem;
+                text-transform: uppercase;
+                font-weight: 500;
+                letter-spacing: 2px;
+                text-align:left;
+            }
+
+            
+
+        }
+    }
+    .review_form{
+       background-color: #0c0c0c3a;
+       margin-top: 1rem;
+       color:$Neutral200;
+       padding-bottom: 4rem;
+       h2{
+           margin-top: -2rem;
+           font-size: 2rem;
+       }
+       
+        .name{
+            display: inline-block;
+            margin-top: 8rem;
+            margin-left: 50%;
+            transform: translate(-50%);
+            margin-bottom: 4rem;
+            
+            
+        }
+        .review{
+            display: inline-block;
+            padding-top: 2rem;
+            margin-left: 50%;
+            transform: translate(-50%);
+            margin-bottom: 2rem;
+            height: auto;
+            border: 2px solid $Neutral800 ;
+            padding: 4rem;
+        }
+        .submitBtn{
+            button{
+                border: none;
+                font-size: 2rem;
+                background-color:$Neutral200 ;
+                font-weight: 500;
+                padding: 1.2rem 2.4rem;
+                margin-left: 50%;
+                transform: translate(-50%);
+                margin-bottom: 2rem;
+            }
+
+        }
+
+    }
+    
+}
+
+}
+@media(max-width:25em){
+
+    .review{
+        
+        height: 100vh;
+        .review_container{
+                display:block;
+            .review_data{
+               
+            
+                .review_card{
+                
+                  
+                  
+                    max-width: 25rem;
+                    height: 40rem;
+                 
+                    .review_name{
+                        font-size: 1rem;
+                    }
+                   
+                   
+        
+                    
+        
+                }
+            }
+
+        }
+
+    
+        
+       
+        
+    }
+    .review_form{
+        background-color: red;
+       
+    }
+    
+
+}

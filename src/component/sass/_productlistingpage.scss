@@ -68,6 +68,7 @@ $gradientlight:rgba(133, 133, 133, 0.44);
                 }
                 .product__button{
                     margin-bottom: 2rem;
+                    
                     .primary{
                        color: $Neutral200;
                         background-color:$Neutral800 ;
@@ -76,6 +77,7 @@ $gradientlight:rgba(133, 133, 133, 0.44);
                         font-size: 1.2rem;
                         font-weight: 500;
                         margin-right: 3rem;
+                        display: inline;
                     }
                     .secondary{
                         color: $Neutral800;
@@ -84,6 +86,7 @@ $gradientlight:rgba(133, 133, 133, 0.44);
                         padding: 1.1rem 2.4rem;
                         font-size: 1.2rem;
                         font-weight: 500;
+                        display: inline-block;
                     }
                 }
             }

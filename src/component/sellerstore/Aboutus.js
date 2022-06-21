@@ -1,6 +1,6 @@
 import React from 'react';
 import "../css/style.css";
-
+import { memo } from 'react';
 const Aboutus=()=>{
 return(
     <div className="aboutus">
@@ -28,4 +28,4 @@ return(
 )
 }
 
-export default Aboutus
+export default memo(Aboutus)

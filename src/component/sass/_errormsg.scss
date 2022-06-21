@@ -1,0 +1,42 @@
+@import"./general";
+
+$Neutral800:#0C0C0C;
+$Neutral700:#2B2B2B;
+$Neutral600:#747474;
+$Neutral500:#858585;
+$Neutral400:#E3E3E3;
+$Neutral300:#F4F4F4;
+$Neutral200:#FBFBFB;
+$gradientdarks:rgba(12, 12, 12, 0.721);
+$gradientlights:rgba(133, 133, 133, 0.741);
+
+
+.error_msg{
+   
+    .content{
+        padding: 2rem;
+    color: $Neutral200;
+    position: fixed;
+    top: 90px;
+    background-color:$Neutral800 ;
+    z-index: 10;
+    margin-left: 50%;
+    transform: translate(-50%);
+    font-size:2rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border: 2px solid $Neutral800 ;
+    
+  
+    
+
+    }
+    
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}

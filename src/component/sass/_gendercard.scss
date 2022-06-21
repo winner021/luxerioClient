@@ -89,5 +89,53 @@ $Neutral200:#FBFBFB;
 
 
 
+@media (max-width:85em){
+  html{
+      font-size: 50%;
+  }
    
+
 }
+}
+@media (max-width:50em){
+  .gendercard{
+    padding: 4rem;
+  }
+}
+
+
+@media (max-width:50em){
+  .gendercard{
+    padding: 4rem;
+   
+  }
+}
+
+@media (max-width:60em){
+  .gendercard{
+    padding: 4rem;
+    .about{
+    margin-left: 9rem;  
+    }
+  }
+}
+
+@media (max-width:52em){
+  .gendercard{
+    padding: 4rem;
+    .mail__card{
+     background-position: center;
+    }
+     .female__card{
+      background-position: center
+     }
+
+    .about{
+    margin-left:1rem;  
+    }
+  }
+}
+
+
+
+
