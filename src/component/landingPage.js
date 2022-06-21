@@ -12,7 +12,7 @@ const landingPage=()=>{
             </div>
             <div className="landingPage__login">
                 <Link to="/home" className='login_buyer login_btn'>Login As Buyer</Link>
-                <a  href=' http://localhost:5000' className='login_seller login_btn'> Login As Seller </a>
+                <a  href='https://luxerioseller.netlify.app' className='login_seller login_btn'> Login As Seller </a>
             </div>
         </div>
     )
