@@ -2037,6 +2037,10 @@ html {
   .footer {
     flex-basis: 30% 30% 30%; } }
 
+@media (max-width: 41.3125em) {
+  .footer {
+    height: 40vh; } }
+
 /* 
 - Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98

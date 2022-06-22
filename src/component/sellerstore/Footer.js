@@ -29,13 +29,6 @@ const Footer=()=>{
           </div>
           <div className="right">
                  <p>contact us</p>
-                 <div className="mail">
-                     luxerio.dummy@mail.com
-                 </div>
-                 <div className="address">
-                     xyx street ,7th town ,elctronic city,banglore
-                 </div>
-
           </div>
           </div>    
         </div>
