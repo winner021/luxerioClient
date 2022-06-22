@@ -20,6 +20,9 @@ import { memo } from 'react'
 
 
 const  Productlistingpage =(props)=>{
+
+    const [getcartClass,setcartClass]=useState("hide");
+    const [getcartmsg,setcartmsg]=useState("null")
     
     useEffect(()=>{
         console.log("outside")
@@ -45,25 +48,22 @@ const  Productlistingpage =(props)=>{
     }
     },[props.categoryClicked,props.selectedGender]) 
 
-     const [getcartClass,setcartClass]=useState("hide");
-     const [getcartmsg,setcartmsg]=useState("null")
-        
-     
     useEffect(()=>{
         if(props.data){
             props.dataStoreAction(props.data)
         }
     },[props.data]) 
 
-   
+    useEffect(()=>{
+        if(props.cartdata.id&&props.cartdata.Price&&props.cartdata.quantity){
+              props.initialCartValue(props.cartdata.id,props.cartdata.Price,props.cartdata.quantity);
+        }
+        
+        },[props.cartdata])
 
-   useEffect(()=>{
-       if(props.cartdata.id&&props.cartdata.Price&&props.cartdata.quantity){
-             props.initialCartValue(props.cartdata.id,props.cartdata.Price,props.cartdata.quantity);
-       }
-       
-       },[props.cartdata])
-    
+
+
+
     
    const cartClickHandler=(value,userid)=>{
          props.cartAddActions(value,userid);
@@ -124,6 +124,7 @@ const  Productlistingpage =(props)=>{
     props.clickaction("ALL PRODUCTS")
     props.genderaction(null)
     props.Allitemaction()
+    
 }
   
 

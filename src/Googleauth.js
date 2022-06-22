@@ -22,7 +22,7 @@ const Googleauth=(props)=>{
          window.google.accounts.id.renderButton(
              
              document.getElementById("In"),
-             {theme:"outline",size:"large"}
+             {theme:"outline",size:"small"}
          );
     },[]);
 
