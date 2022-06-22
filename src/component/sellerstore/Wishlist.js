@@ -12,7 +12,7 @@ import Message from '../helpercomponent/Message'
 
     useEffect(()=>{
        props.wishListDataFetcher()
-    },[props.Wishlistflag,props.wishListdeleteflag,props.authId.sub])
+    },[props.Wishlistflag,props.wishListdeleteflag,props.authId])
 
 
 
@@ -33,7 +33,7 @@ import Message from '../helpercomponent/Message'
     const renderlist=props.data.map((item)=>{
       console.log("wishlist")
       if(props.signInstate){
-         if(props.signInstate === item.userid){
+         if(props.signInstate.sub === item.userid){
 
             return   <div  className="product_desc">
           <div className="product_image">
@@ -95,7 +95,7 @@ const mapStateToProps=(state)=>{
     return({
         Wishlistflag:state.wishlist.data,
         data:state.wishlistdata.data,
-        signInstate:state.Authstate.data.sub,
+        signInstate:state.Authstate.data,
         wishListdeleteflag:state.wishlistdelete.data,
         authId:state.Authstate.data,
         state:state,
