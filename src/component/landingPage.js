@@ -2,6 +2,8 @@ import React from 'react'
 import "./css/style.css"
 import { Link } from 'react-router-dom'
 const landingPage=()=>{
+
+   
     return(
         <div className="landingPage">
             <div className="brandName">

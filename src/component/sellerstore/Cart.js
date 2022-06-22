@@ -34,24 +34,35 @@ const Cart=(props)=>{
 
   useEffect(()=>{
     if(props.data){
+if(props.authId){
+  
+  var totalprice=0;
+  var Totalquantity=0
+  props.data.map((list)=>{
+    if(list.userid==props.authId.sub){
+      totalprice=totalprice+((list.Price)*(list.quantity))
+    
+      Totalquantity=Totalquantity+(list.quantity)
 
-      var totalprice=0;
-      var Totalquantity=0
-      props.data.map((list)=>{
-        totalprice=totalprice+((list.Price)*(list.quantity))
-        
-        Totalquantity=Totalquantity+(list.quantity)
+    }
+ 
+
    
-       
-      })
-      setprice( totalprice)
-      setqty( Totalquantity)
-      props.totalPriceAction(totalprice,Totalquantity)
+  })
+  setprice( totalprice)
+  setqty( Totalquantity)
+  props.totalPriceAction(totalprice,Totalquantity)
+
+}
+else{
+  window.alert("please login")
+}
+    
 
     }
    
   
-   },[props.data])
+   },[props.data,props.authId])
  
 
   useEffect(()=>{
@@ -106,6 +117,10 @@ const Cart=(props)=>{
  }
 
 
+
+
+
+
   
 
   
@@ -123,12 +138,12 @@ const Cart=(props)=>{
          }, 1000)
 
   }
-
+console.log(props.data.length)
 const renderList=props.data.map((item)=>{
-       console.log(props.signInstate.userid)
-       console.log( item.userid)
-      if(props.signInstate === item.userid){
-       
+  if(props.signInstate.data){
+    if(props.data.length!==1){
+      if(props.signInstate.data.sub === item.userid){
+         
         return  <div key={item.id} className="product_desc">
         <div className="product_image">
              <img src={item.Imageurl} alt="" />
@@ -173,9 +188,16 @@ const renderList=props.data.map((item)=>{
   
   </div>
         
-      }else{
-        console.log("ghjjhghjhghgj")
       }
+  
+     }
+    
+  }
+   
+  
+   
+        
+
         
     })
 
@@ -246,8 +268,9 @@ const mapStateToProps=(state)=>{
         quantity:state.quantity.data,
         quantityFlag:state.udatedQuantityflag,
         totalPrice:state.totalPrice.data,
-        signInstate:state.Authstate.data.sub,
+        signInstate:state.Authstate,
         cartDeleteFlag:state.CartDelete.data,
+        authId:state.Authstate.data,
         state:state,
       })
 }

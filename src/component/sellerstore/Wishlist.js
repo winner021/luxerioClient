@@ -12,7 +12,7 @@ import Message from '../helpercomponent/Message'
 
     useEffect(()=>{
        props.wishListDataFetcher()
-    },[props.Wishlistflag,props.wishListdeleteflag])
+    },[props.Wishlistflag,props.wishListdeleteflag,props.authId.sub])
 
 
 
@@ -32,40 +32,47 @@ import Message from '../helpercomponent/Message'
 
     const renderlist=props.data.map((item)=>{
       console.log("wishlist")
-      if(props.signInstate === item.userid){
+      if(props.signInstate){
+         if(props.signInstate === item.userid){
 
-         return   <div  className="product_desc">
-       <div className="product_image">
-            <img src={item.Imageurl} alt="" />
-       </div>
-           <div className="product_details">
-                <div className="product_Name">
-                  {item.category}
-                </div>
-                <div className="product_price">
-                   Price:{item.Price} RS
-                </div>
-                <div className="product_Brand">
-                   Brand:{item.Brandname}
-                </div>
-              <div className="Product_btn">
-
-                   
-                <div className="btn">
-                  <div className="product_delete" >
-                    <button onClick={()=>{deletehandler(item.id)}}>
-                       delete
-                    </button>
-                  </div>
+            return   <div  className="product_desc">
+          <div className="product_image">
+               <img src={item.Imageurl} alt="" />
+          </div>
+              <div className="product_details">
+                   <div className="product_Name">
+                     {item.category}
+                   </div>
+                   <div className="product_price">
+                      Price:{item.Price} RS
+                   </div>
+                   <div className="product_Brand">
+                      Brand:{item.Brandname}
+                   </div>
+                 <div className="Product_btn">
+   
+                      
+                   <div className="btn">
+                     <div className="product_delete" >
+                       <button onClick={()=>{deletehandler(item.id)}}>
+                          delete
+                       </button>
+                     </div>
+      </div>
+     
+     
    </div>
-  
-  
-</div>
-</div>
-
-
-</div>
+   </div>
+   
+   
+   </div>
+         }
       }
+      else{
+         return <div>Please Login</div>
+      }
+
+      
        
     })
 
@@ -90,8 +97,9 @@ const mapStateToProps=(state)=>{
         data:state.wishlistdata.data,
         signInstate:state.Authstate.data.sub,
         wishListdeleteflag:state.wishlistdelete.data,
-        state:state
-            })
+        authId:state.Authstate.data,
+        state:state,
+        })
 }
 
 export default connect(mapStateToProps,{wishListDataFetcher,wishListdeleteAction}) (Wishlist);
