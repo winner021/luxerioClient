@@ -136,8 +136,8 @@ $gradientlights:rgba(133, 133, 133, 0.741);
                 .review_card{
                 
                   
-                  
-                    max-width: 40rem;
+                    max-width: 134rem;
+                    
                     height: 30rem;
                  
                     
@@ -182,12 +182,12 @@ $gradientlights:rgba(133, 133, 133, 0.741);
     .review_data{
         display:block;
         justify-content: center;
-        flex-wrap: wrap;
+        
         .review_card{
             background-color:rgba(255, 255, 255, 0.673) ;
            display: block;
             margin-top: 2rem;
-            max-width: auto;
+           
             overflow: hidden;
             height: auto;
             margin-right: 2rem;
@@ -279,7 +279,7 @@ $gradientlights:rgba(133, 133, 133, 0.741);
                 
                   
                   
-                    max-width: 25rem;
+                  
                     height: 40rem;
                  
                     .review_name{
