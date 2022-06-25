@@ -15,7 +15,7 @@ const Googleauth=(props)=>{
 
     useEffect(()=>{
        window.google.accounts.id.initialize({
-             client_id:"181378638313-et4kr94v5p8fqmg4laa7faqgau82rdi8.apps.googleusercontent.com",
+             client_id:"862675367610-09vsbv0slds850eilhk11gqcm8c9o51m.apps.googleusercontent.com",
              callback:handleCallBackResponse
             })
 
